@@ -7,54 +7,93 @@
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style for the form labels */
-  label {
+}
+
+/* Style for the form labels */
+label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     width: 100%;
     text-align: start;
-  }
-  
-  /* Style for the form inputs */
-  input[type="text"],
-  input[type="number"],
-  input[type="password"] {
+}
+
+/* Style for the form inputs */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  /* Placeholder color */
-  input::placeholder {
+}
+
+/* Placeholder color */
+input::placeholder {
     color: #888;
-  }
-  
-  /* Focus state for inputs */
-  input:focus {
+}
+
+/* Focus state for inputs */
+input:focus {
     border-color: #870961; /* Green border on focus */
     outline: none;
     box-shadow: 0 0 15px rgba(112, 7, 107, 0.5); /* Green shadow on focus */
-  }
-  
-  .submit{
+}
+
+/* Submit button styling */
+.submit {
     background-color: #32d057;
     color: #f9f9f9;
     font-size: 20px;
-    height: 30px;
-    width: 50%;
+    height: 45px; /* Adjusted height */
+    width: 100%; /* Full width for smaller screens */
+    border: none; /* Remove default border */
+    border-radius: 4px;
     cursor: pointer;
-  }
-  .submit:hover {
+    padding: 10px 0; /* Vertical padding */
+}
+
+/* Submit button hover effect */
+.submit:hover {
     background-color: #115314; /* Darker green on hover */
-  }
-  .heading{
-    font-size: 30px;
+}
+
+/* Heading styling */
+.heading {
+    font-size: 24px; /* Adjusted font size for better scaling */
     color: rgb(139, 7, 7);
     text-shadow: 0 0 2px red;
-  }
+    text-align: center; /* Center align heading */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .add-user-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .submit {
+        font-size: 18px; /* Slightly smaller font size for better fit */
+    }
+
+    .heading {
+        font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .add-user-container {
+        padding: 10px; /* Further reduce padding on very small screens */
+    }
+
+    .submit {
+        font-size: 16px; /* Further reduce font size */
+        height: 40px; /* Adjust height */
+    }
+
+    .heading {
+        font-size: 18px; /* Further adjust heading size */
+    }
+}

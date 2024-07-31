@@ -1,54 +1,135 @@
-/* TableStyles.css */
+/* Container for the table */
 .table-container {
-    min-width: 700px;
     margin: 0 auto;
-  }
-  
-  .table {
+    padding: 10px; /* Add padding to avoid content touching edges */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+/* Table styling */
+.table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  .table th {
+    min-width: 600px; /* Ensure table has a minimum width for small screens */
+}
+
+/* Table header */
+.table th {
     background-color: black;
     color: white;
-    font-size: 27px;
+    font-size: 1.2rem; /* Use rem units for better scaling */
     height: 50px;
-  }
-  
-  .table td {
-    font-size: 18px;
-    height: 40px;
-  }
-  
-  .table tr:nth-of-type(odd) {
+}
+
+/* Table data cells */
+.table td {
+    font-size: 1rem; /* Use rem units for better scaling */
+    height: 50px;
+}
+
+/* Alternate row background */
+.table tr:nth-of-type(odd) {
     background-color: #e7e4e4; /* Light grey for odd rows */
-  }
-  
-  .table tr:last-child td,
-  .table tr:last-child th {
+}
+
+/* Remove border from last row */
+.table tr:last-child td,
+.table tr:last-child th {
     border: 0;
-  }
-  
-  .edit-btn {
+}
+
+/* Edit button styling */
+.edit-btn {
     background-color: #4caf50;
     color: rgb(239, 237, 237);
-    margin-right: 5px;
     cursor: pointer;
-  }
-  
-  .delete-btn {
+    padding: 5px 10px; /* Add padding */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+/* Delete button styling */
+.delete-btn {
     background-color: #f44336;
     color: white;
+    margin-right: 5px;
     cursor: pointer;
-  }
-  .add-btn{
+    padding: 5px 10px; /* Add padding */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+/* Add button styling */
+.add-btn {
     background-color: #255cc0;
     color: #e7e4e4;
     cursor: pointer;
     margin-bottom: 3%;
     height: 40px;
-    width: 100px;
-    font-size: 17px;
+    width: 150px;
+    font-size: 1rem; /* Adjust font size */
     margin-top: 3%;
-  }
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 0 10px; /* Add padding */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .table-container {
+        padding: 10px;
+    }
+
+    .table {
+        min-width: 100%; /* Full width for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+
+    .table th {
+        font-size: 1rem; /* Adjust header font size */
+    }
+
+    .table td {
+        font-size: 0.9rem; /* Adjust cell font size */
+    }
+
+    .add-btn {
+        width: 100%; /* Full width button on small screens */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        padding: 5px; /* Reduce padding for very small screens */
+    }
+
+    .table {
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .table th {
+        font-size: 0.9rem; /* Further adjust header font size */
+    }
+
+    .table td {
+        font-size: 0.8rem; /* Further adjust cell font size */
+    }
+
+    .add-btn {
+        height: 35px; /* Adjust button height */
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .delete-btn {
+        font-size: 0.8rem; /* Adjust font size for buttons */
+        width: 57px;
+        margin: 2px;
+    }
+    .edit-btn{
+        width: 57px;
+        margin: 2px;
+    }
+    
+}

@@ -1,18 +1,27 @@
 {
   "user": [
     {
-      "name": "Sanika",
-      "address": "Gadhinglaj",
+      "fname": "Sanika",
+      "lname": "Ghugare",
       "email": "sanika@gmail.com",
-      "contact": "776745352",
+      "phone": "776745352",
       "id": "1"
     },
     {
-      "name": "Sur",
-      "address": "Pune",
+      "fname": "Shruti",
+      "lname": "Ghugare",
       "email": "sur@gmail.com",
-      "contact": "8848737282",
-      "id": "2"
+      "phone": "8848737282",
+      "id": "2",
+      "password": "1000"
+    },
+    {
+      "id": "cb83",
+      "fname": "Sayali",
+      "lname": "Kurade",
+      "email": "sayali@gmail.com",
+      "phone": "6734567278",
+      "password": "7882"
     }
   ]
 }

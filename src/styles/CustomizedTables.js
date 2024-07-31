@@ -16,37 +16,38 @@ export default function CustomizedTables() {
     const handleDelete = (id) => {
         if (window.confirm("Are you sure you want to delete the user?")) {
             dispatch(deleteUser(id));
+            dispatch(loadUsers()); // Fetch the updated list of users after deletion
         }
     };
 
     return (
         <div className="table-container">
-            <button className="action-btn add-btn" onClick={() => navigate("/addUser")}>Add User</button>
+            <button className="action-btn add-btn" onClick={() => navigate("/addUser")}>Add Customer</button>
             <table className="table" aria-label="customized table">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>First Name</th>
+                        <th>Last name</th>
                         <th>Email</th>
-                        <th>Contact</th>
-                        <th>Address</th>
+                        <th>Phone</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     {users.map((user) => (
                         <tr key={user.id}>
-                            <td>{user.name}</td>
+                            <td>{user.fname}</td>
+                            <td>{user.lname}</td>
                             <td>{user.email}</td>
-                            <td>{user.contact}</td>
-                            <td>{user.address}</td>
+                            <td>{user.phone}</td>
                             <td>
-                                <button className="action-btn edit-btn" onClick={() => navigate(`/editUser/${user.id}`)}>Edit</button>
                                 <button 
                                     className="action-btn delete-btn" 
                                     onClick={() => handleDelete(user.id)}
                                 >
                                     Delete
                                 </button>
+                                <button className="action-btn edit-btn" onClick={() => navigate(`/editUser/${user.id}`)}>Edit</button>
                             </td>
                         </tr>
                     ))}
