@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "name": "Sanika",
+      "address": "Gadhinglaj",
+      "email": "sanika@gmail.com",
+      "contact": "776745352",
+      "id": "1"
+    },
+    {
+      "name": "Sur",
+      "address": "Pune",
+      "email": "sur@gmail.com",
+      "contact": "8848737282",
+      "id": "2"
+    }
+  ]
+}

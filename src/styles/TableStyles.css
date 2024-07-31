@@ -1,0 +1,54 @@
+/* TableStyles.css */
+.table-container {
+    min-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th {
+    background-color: black;
+    color: white;
+    font-size: 27px;
+    height: 50px;
+  }
+  
+  .table td {
+    font-size: 18px;
+    height: 40px;
+  }
+  
+  .table tr:nth-of-type(odd) {
+    background-color: #e7e4e4; /* Light grey for odd rows */
+  }
+  
+  .table tr:last-child td,
+  .table tr:last-child th {
+    border: 0;
+  }
+  
+  .edit-btn {
+    background-color: #4caf50;
+    color: rgb(239, 237, 237);
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+  .add-btn{
+    background-color: #255cc0;
+    color: #e7e4e4;
+    cursor: pointer;
+    margin-bottom: 3%;
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    margin-top: 3%;
+  }

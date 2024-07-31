@@ -1,0 +1,60 @@
+/* Container for the form */
+.add-user-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the form labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    width: 100%;
+    text-align: start;
+  }
+  
+  /* Style for the form inputs */
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Placeholder color */
+  input::placeholder {
+    color: #888;
+  }
+  
+  /* Focus state for inputs */
+  input:focus {
+    border-color: #870961; /* Green border on focus */
+    outline: none;
+    box-shadow: 0 0 15px rgba(112, 7, 107, 0.5); /* Green shadow on focus */
+  }
+  
+  .submit{
+    background-color: #32d057;
+    color: #f9f9f9;
+    font-size: 20px;
+    height: 30px;
+    width: 50%;
+    cursor: pointer;
+  }
+  .submit:hover {
+    background-color: #115314; /* Darker green on hover */
+  }
+  .heading{
+    font-size: 30px;
+    color: rgb(139, 7, 7);
+    text-shadow: 0 0 2px red;
+  }
