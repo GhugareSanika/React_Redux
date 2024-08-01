@@ -21,6 +21,7 @@ const getUser = (user) => ({
 
 const userUpdated = (user) => ({
     type: types.UPDATE_USER,
+    payload: user,
 });
 
 export const loadUsers = () => {
